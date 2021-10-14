@@ -1,0 +1,482 @@
+body {
+font-family:"Segoe UI", sans-serif;
+font-size: 21px;
+color: #152446;
+margin: 0;
+padding: 0;
+height:100vh;
+width: 100vw;
+}
+
+.media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+}
+
+i {
+    color:#FFD369;
+}
+
+i:hover {
+    color: #eeeeee;
+    transition: .5s;
+}
+
+.rrss {
+    border: 1px solid #FFD369;
+    border-radius: 50%;
+    list-style: none;
+    margin: 21px 21px;
+    display: inline-block;
+    font-size: 21px;
+    padding: 14px 14px;
+    transition: .5s;
+}
+
+.rrss:hover {
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+    transition: .5s;
+}
+
+.content {
+    height: 900px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position:relative;
+    top: 49%;
+    left: 50%;
+    margin-top: 90px;
+    transform: translate(-50%, -50%);
+}
+
+
+.navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #152446;
+    margin: 6px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: #FFD369;
+}
+
+.input1 {
+    display: none;
+
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 50%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 50%;
+    height: 50%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+.fundo {
+color: #FFD369;
+background-color: #222831;
+padding: 33px 0;
+}
+
+.titulo p {
+    font-size: 33px;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: -27%;
+    margin-left: 0;
+}
+
+.margem {
+width: 100%;
+max-width: 768px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+align-content: center;
+position:relative;
+}
+
+@media screen and (max-width: 820px) {
+.margem {
+padding: 0 24px;
+margin: 0;
+width: auto;
+}
+}
+
+.cabeçalho {
+align-items: center;
+display: flex;
+justify-content: space-between;
+}
+
+@media screen and (max-width: 486px) {
+.cabeçalho {
+    flex-direction: column;
+}
+}
+
+.avatar {
+    top: 3px;
+    height: 85px;
+    width: 90px;
+    box-shadow: #FFD369;
+    border-style: groove;
+    border-color:#FFD369;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+}
+
+@media screen and (max-width: 486px) {
+    .menu {
+    margin-top: 14px;
+    }
+}
+
+.item {
+    color:#FFD369;
+    font-size: 17px;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 16px;
+    display:inline-flex;
+    height: 28px;
+    width: auto;
+    margin-right:15px;
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: none;
+    text-align: center;
+    line-height: 15px;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.item:hover {
+    background-color: rgba(112,181,249,0.2);
+    border-width: 2px;
+}
+
+.item:active {
+    color: rgba(0, 0, 0, 0.9);
+    border-color: rgba(0, 0, 0, 0.9);
+} 
+
+.meio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.primeira-section {
+    background-color: #eeeeee;
+}
+
+.titulo {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0,5px;
+    bottom: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.segunda-section {
+background-color: #eeeeee;
+size: 500px;
+}
+
+.segunda-section img {
+    background-image: url(https://germanrivas.com.br/wp-content/uploads/2021/02/PerfilSITCART-3-scaled.jpg);
+    max-width: fit-content;
+    height: auto;
+}
+
+.terceira-section {
+    background-color: #eeeeee;
+}
+
+.quarta-section {
+    background-color: #eeeeee;
+}
+
+
+.cards {
+    background-color: #f7e3b5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:486px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+.caixa {
+    background-color: #222831;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFD369;
+    width: 25%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.caixa:hover {
+    border: 1px solid #20201f;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(196, 210, 0, 0.15);
+}
+
+.caixa img {
+    background-image: url(https://live.staticflickr.com/3735/12692829385_76bc06e0e4_b.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+}
+
+.caixa p {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.caixa span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.caixa2 {
+    background-color: #222831;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFD369;
+    width: 25%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.caixa2:hover {
+    border: 1px solid #20201f;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(196, 210, 0, 0.15)
+}
+
+.caixa2 img {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_Zq8VKdEr00d8EBQDYrW58JMLiTFia4k9w&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+}
+
+.caixa2 p {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.caixa2 span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.caixa3 {
+    text-align: center;
+    align-items: center;
+    background-color: #222831;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFD369;
+    width: 25%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.caixa3:hover {
+    border: 1px solid #20201f;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(196, 210, 0, 0.15)
+}
+
+.caixa3 img {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/67/Learning_Curve_--_Coming_Soon_Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 180px;
+}
+
+.caixa3 p {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.caixa3 p {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.caixa3 span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.caixa3 a {
+    background-color: #152446;
+    border: none;
+    border-radius: 35px;
+    color: #eeeeee;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.caixa3 a:hover {
+    background-color:#eeeeee;
+    color: #152446;
+}
+
+.caixa3 button:focus {
+    outline: none;
+}
+
+.contato {
+    background-color: #FFD369;
+    color: #222831;
+}
+
+.formulario {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+    .formulario {
+        width: 100%;
+    }
+}
+
+.formulario label {
+    color: #eeeeee;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+.formulario input {
+    background-color: transparent;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    color: #eeeeee;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.formulario input:focus {
+    outline: none;
+}
+
+.formulario textarea {
+    background-color: transparent;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    color: #eeeeee;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.formulario textarea:focus {
+    outline: none;
+}
+
+
+.formulario button {
+    background-color: #878c96;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    width: fit-content;
+}
+
+.formulario button:hover {
+    background-color: #eeeeee;
+}
+
+.formulario button:focus {
+    outline: none;
+}
+
+.copyright p {
+    align-items: center;
+    align-content: center;
+    
+}
