@@ -402,6 +402,73 @@ size: 500px;
     outline: none;
 }
 
+.cardw {
+    background: #222831;
+    color: #eeeeee;
+    padding: 3em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 5.5em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao2 {
+    margin:0.5em;
+    border-radius: 50%;
+    border: none;
+    height:44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: #eeeeee;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.botao2:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background:#7c7c7c2b;
+    color: #eeeeee;
+    font-family: inherit;
+    font-size: 105%;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: #eeeeee;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
 .contato {
     background-color: #FFD369;
     color: #222831;
